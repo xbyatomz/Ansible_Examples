@@ -1,0 +1,9 @@
+- name: Install Apache2
+  hosts: webservers
+  remote_user: ansible
+
+  tasks:
+    - name: Install apache2
+      apt:
+        name: apache2
+        state: latest
